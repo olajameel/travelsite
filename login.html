@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> my travel site </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+
+  <section class="sub-header">
+   <nav>  
+    <a href="index.html"><img src=""></a>
+       <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+       <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="Flights.html">FLIGHTS</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="login.html">LOGIN</a></li>
+           </ul>
+       </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+    <!--- login section--->
+    
+<div class="loginbox">
+    <form action="">
+    <h1>Login</h1>
+        <p>Username</p>
+        <input type="text" placeholder="Enter Username">
+        <P>Password</P>
+        <input type="password" placeholder="Enter Password">
+        <input type="submit" name="" value="login">
+        <p>forget password? <a href="#">click here </a></p>
+        <p>don't have an account? <a href="#"> register now</a></p>
+        
+    </form>
+    </div>
+        
+<!----footer---->
+   <section class="about-footer">
+    <h4></h4>
+
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+       </div>
+       
+     <p> </p>
+    </section>
+    <!-- javascript for toggle menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+          navLinks.style.right="0";
+}
+     function hideMenu(){
+          navLinks.style.right="-200px";
+} 
+    </script> 
+</body>   
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>  travel site </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>   
+   <nav>
+    <a href="index.html"><img src=""></a>
+       <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+       <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="Flights.html">FLIGHTS</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="login.html">LOGIN</a></li>
+           </ul>
+       </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <!----home section--->
+      <section class="home" id="home">
+      <div class="text-box">
+      <h1> Every journey tells a story </h1>
+          <p> start your journey with us</p>
+          <a href="discover.html"class="hero-btn"> discover more </a>      </div>
+      <div class="controls">
+      <span class="vid-btn active" data-src="mytravelsite/video2.mp4"></span>  
+           <span class="vid-btn" data-src="mytravelsite/travell.mp4"></span>  
+           <span class="vid-btn" data-src="mytravelsite/travels.mp4"></span>  
+           <span class="vid-btn" data-src="mytravelsite/travelll.mp4"></span>  
+      </div>
+      <div class="video-container">
+      <video src="mytravelsite/video1.mp4" id="video-slider" loop autoplay muted> </video>
+          </div>
+    </section>
+    
+    <section class="dest">
+    <h1>Our most popular destinations</h1>
+    <p>Enjoy the premiume experience with us</p>
+        <div class="row">
+        <div class="dest-col">
+            <img src="jordan1.jpg">
+            <div class="layer">
+                <h3> JORDAN  </h3>    
+                <p>Amman</p>
+            </div>
+            </div>
+   <div class="dest-col">
+            <img src="turkey/turk1.jpg">
+            <div class="layer">
+            <h3> TURKEY  </h3>
+            <p>Istanbol</p>
+            </div>
+            </div>
+         <div class="dest-col">
+            <img src="egypt/egy1.jpg">
+            <div class="layer">
+            <h3> EGYPT </h3>
+                <p>Cairo</p>
+             </div>
+       </div>
+        </div>
+    </section>
+             
+    <!---
+    <section class="ride">
+    <h1>our services</h1>
+    <p></p>
+    <div class="row">
+    <div class="ride-col">
+        <img src="">
+        <h3> </h3>
+        <p>book your flights</p>
+        </div>
+    <div class="ride-col">
+        <img src="">
+        <h3>aaaaaaaaaa</h3>
+        <p>sdsvvvyyytvvv</p>
+        </div>
+     <div class="ride-col">
+        <img src="">
+        <h3>tywtbby </h3>
+        <p>hgggggggerrr</p>
+        </div>
+    </div>
+    </section>
+    <!----????--->
+    <section class="test">
+     <h1>our clients reveiws</h1>   
+    
+    <div class="row">
+        <!---
+        <div class="test-col">
+        <img src="1.jpg">
+        <div>  
+            <p> </p>
+            <h3>Maryam</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+            </div>
+        </div> 
+         <!----????--->
+        <div class="test-col">
+        <img src="2.jpg">
+        <div>  
+            <p>  </p> 
+            <h3>Ola Jameel </h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section class="cta">
+    <h1> </h1>
+        <a href=""class="hero-btn"> contect us </a>
+    </section>
+<!----footer---->
+   <section class="footer">
+    <h4></h4>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+       </div>
+   <!--    <p> Made with <i class="fa fa-heart-o"></i> </p> 
+    --> </section>
+    <!-- javascript for toggle menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+          navLinks.style.right="0";
+}
+     function hideMenu(){
+          navLinks.style.right="-200px";
+} 
+    </script>    
+</body>   
+</html>
